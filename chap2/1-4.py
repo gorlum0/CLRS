@@ -15,12 +15,12 @@ def binary_sum(A, B):
 
 if __name__ == '__main__':
     A = [1, 1, 0, 0, 1]
-    B = [1, 1, 0, 0, 1]
+    B = [1, 1, 1]
     n = max(len(A), len(B))
-    fmt = '%%%ds' % len(str([0]*(n+1)))
+    just = len(str([0]*(n+1)))
 
-    print fmt % A
-    print fmt % '+'
-    print fmt % B
-    print fmt % '='
-    print fmt % binary_sum(A, B)
+    print '%*s' % (just, A)
+    print '%*s' % (just, '+')
+    print '%*s' % (just, B)
+    print '%*s' % (just, '=')
+    print '%*s' % (just, binary_sum(A, B))
