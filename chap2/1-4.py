@@ -17,7 +17,8 @@ if __name__ == '__main__':
     A = [1, 1, 0, 0, 1]
     B = [1, 1, 0, 0, 1]
     n = max(len(A), len(B))
-    fmt = '%%%ds' % len(str([0]*(n+1)))
+    just = len(str([0] * (n+1)))
+    fmt = '%%%ds' % just
 
     print fmt % A
     print fmt % '+'
