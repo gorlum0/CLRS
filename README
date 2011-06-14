@@ -1,2 +1,4 @@
 
 My code for CLRS, mostly in python.
+
++ O(n) might mean Theta(n) depending on context
