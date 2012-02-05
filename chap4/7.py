@@ -41,6 +41,6 @@ if __name__ == '__main__':
     print B
     x = is_monge(B)
     print 'is_monge(B) =', x
-    B[1,2] = 2
+    B[1,2] = 5
     print B
     print 'is_monge(B) =', is_monge(B)
