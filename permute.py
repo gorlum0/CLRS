@@ -3,6 +3,7 @@
 import random
 
 def permute_by_sorting(A):
+    """O(n*lg(n))"""
     n = len(A)
     P = [0]*n
     for i in xrange(n):
@@ -10,6 +11,7 @@ def permute_by_sorting(A):
     A.sort(key=lambda k: P[k])
 
 def permute_in_place(A):
+    """O(n)"""
     n = len(A)
     for i in xrange(n):
         j = random.randint(i, n-1)
