@@ -22,7 +22,7 @@ def heapify(A, i):
         A[i], A[largest] = A[largest], A[i]
         heapify(A, largest)
 
-def heapify2(A, i):
+def heapify_iter(A, i):
     """iter version"""
     while i <= heap_size(A)//2:
         l, r = left(i), right(i)
